@@ -1,0 +1,716 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Sammy's Minchrips</title>
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Playwrite+BE+VLG:wght@100..400&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.6.0/css/all.min.css"
+        integrity="sha512-Kc323vGBEqzTmouAECnVceyQqyqdsSiqLQISBL29aUW4U/M7pSPA/gEUZQqv1cwx4OnYxTxve5UMg5GT6L4JJg=="
+        crossorigin="anonymous" referrerpolicy="no-referrer" />
+        <link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Satisfy&display=swap" rel="stylesheet">
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Roboto:ital,wght@0,100;0,300;0,400;0,500;0,700;0,900;1,100;1,300;1,400;1,500;1,700;1,900&display=swap" rel="stylesheet">
+<link rel="icon" href="images/logo.png">
+        <link rel="stylesheet" href="lay.css">
+</head>
+<style>
+body {
+    margin: 0;
+    padding: 0;
+    bottom: 0;
+    background-image: url("images/background1.jpg");
+    background-position: top;
+    background-size: cover;
+    background-repeat: no-repeat;
+    scroll-behavior: smooth;
+    
+}
+
+.satisfy-regular {
+    font-family: "Satisfy", cursive;
+    font-weight: 700;
+    font-style: normal;
+    font-size: 32px;
+    text-decoration: none solid rgb(194 242 252 );
+    text-align: left;
+    color: #C2F2FC;
+    
+  }
+  .roboto-regular {
+    font-family: "Roboto", sans-serif;
+    font-weight: 400;
+    font-style: normal;
+    font-size: 16px;
+    color:rgb(29 33 36);
+    text-align: justify;
+    text-decoration: none solid rgb(29 33 36);
+
+  }
+nav {
+    position: top;
+    left: 0;
+    top: 0;
+    display: flex;
+    flex-direction: row;
+    background-color: rgb(30 82 91);
+    margin-bottom: 40px;
+
+}
+
+nav img {
+    width: 75px;
+    height: 75px;
+    padding-left: 10px;
+}
+
+
+
+.section-container {
+    display: flex;
+    flex-direction: row;
+}
+
+.section-right {
+    display: flex;
+    flex-direction: column;
+    width: 50%;
+    margin-left: 25%;
+}
+
+.sidebar {
+    display: flex;
+    flex-direction: column;
+    margin-left: 20px;
+    width: 25%;
+    margin-right: 10px;
+}
+
+.card-container {
+    display: flex;
+    flex-direction: column;
+    border: 1px solid black;
+    border-radius: 10px;
+    margin-top: 20px;
+    margin-bottom: 20px;
+    background-color: white;
+    color: black;
+}
+
+.card-title {
+    background-color: rgb(30 82 91);
+    padding: 20px;
+    border-radius: 10px 10px 0 0;
+    font-size: 25px;
+    color: rgb(71, 239, 239);
+    font-family: "Roboto", sans-serif;
+    font-weight: 700;
+    font-style: normal;
+}
+
+
+.card-body {
+    display: flex;
+    flex-direction: row;
+    padding: 2px;
+}
+
+.card-body img {
+    width: 40%;
+    height: 20vh;
+    margin: 20px;
+}
+
+.card-body a {
+    text-decoration: none;
+    color: black;
+    font-weight: bold;
+    font-size: 20px;
+}
+
+
+.card-body p {
+    font-size: 15px;
+    line-height: 20px;
+    text-align: justify;
+    padding-right: 15px;
+    padding-left: 15px;
+    letter-spacing: 2px;
+    line-height: 20px;
+    font-family: 'Roboto', sans-serif;
+    font-weight: 400;
+    font-style: normal;
+    font-size: 16px;
+    color:rgb(29 33 36);
+    text-align: justify;
+    text-decoration: none solid rgb(29 33 36);
+}
+
+.card-footer {
+    background-color: rgb(246, 243, 243);
+    border-radius: 0 0 10px 10px;
+    display: flex;
+    justify-content: flex-end;
+    align-items: flex-end;
+    padding: 20px;
+    border-top: 2px solid rgb(232, 223, 223);
+}
+
+.card-footer button {
+    cursor: pointer;
+    background-color: grey;
+    color: white;
+    border: 1px solid white;
+    border-radius: 5px;
+    padding: 5px;
+}
+
+footer {
+    height: 35vh;
+    background-color: rgb(30 82 91);
+}
+
+.card-body button {
+    margin: 10px;
+    padding: 5px;
+    background-color:#007bff;
+    border: 1px solid #007bff;
+    color: white;
+    border: 1px solid white;
+    border-radius: 5px;
+    margin-bottom: 30px;
+    cursor: pointer;
+}
+
+.list button {
+    background-color: grey;
+    color: white;
+    width: 25px;
+    height: 25px;
+}
+.card-body1 ul li a{
+color:#6c757d !important;
+font-weight: 700 !important;
+}
+
+.card-body1 p a{
+    color:#6c757d !important;
+    font-weight: 700 !important;
+    font-style: bold;
+    }
+
+.fa-square-caret-right {
+    font-size: 20px;
+    margin-left: 10px;
+    
+}
+a{
+    text-decoration: none;
+}
+a:hover{
+    text-decoration: underline;
+
+ }
+
+
+ .fa-check{
+    padding: 5px;
+}
+.fa-square-caret-right{
+    padding:5px;
+}
+
+.card-body1 ul button{
+ margin: 5px;  
+ border-radius: 5px;
+ background-color: gray;
+ border: none;
+ color:white;
+}
+
+p button{
+margin:5px;
+border-radius: 5px;
+background-color: gray;
+border: none;
+color:white;
+
+}
+.card-body ul li a{
+    color: rgb(25, 86, 136);
+    font-size: 16px;
+    font-weight: 700;
+}
+
+.footer-end {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+.fa-twitter {
+    font-size: 26px;
+    margin: 5px;
+    padding: 5px;
+    margin-top: 30px;
+    cursor: pointer;
+    color: white;
+}
+
+.fa-facebook {
+    font-size: 26px;
+    margin: 5px;
+    padding: 5px;
+    margin-top: 30px;
+    cursor: pointer;
+    color:white
+}
+
+.fa-instagram {
+    font-size: 26px;
+    margin: 5px;
+    padding: 5px;
+    margin-top: 30px;
+    cursor: pointer;
+    color: white;
+}
+
+.fa-google {
+    font-size: 26px;
+    margin: 5px;
+    padding: 5px;
+    margin-top: 30px;
+    cursor: pointer;
+    color: white;
+}
+
+.list {
+    display: flex;
+    flex-direction: column;
+}
+
+.card-body input {
+    width: 75%;
+    height: 30px;
+    margin-top: 10px;
+    margin-left: 10px;
+    border-radius: 5px;
+    border: 1px solid grey;
+}
+
+.ancher a {
+    padding-bottom: 10px;
+}
+
+.top {
+    background: rgb(226, 166, 117);
+    position: fixed;
+    height: 50px;
+    width: 50px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    right: 30px;
+    bottom: 15px;
+    border-radius: 5px;
+    text-decoration: none;
+    opacity: 0;
+    pointer-events: none;
+    transition: all .4s;
+}
+
+.top.active {
+    bottom: 32px;
+    pointer-events: auto;
+    opacity: 1;
+}
+
+.pagination {
+    display: inline-flex;
+
+    border: none;
+    margin-bottom: 20px;
+    border-radius: 10px;
+    background-color: white;
+   
+  }
+
+  .pagination a {
+    color: #007BFF;
+    float: left;
+    padding: 8px 16px;
+    text-decoration: none;
+    border: 1px  gray;
+
+    
+  }
+  
+  .pagination a.active {
+    background-color: #007BFF;
+    color: white;
+    
+  }
+  
+  .pagination a:hover:not(.active) {background-color: #ddd;}
+
+
+/** Tab Layout**/
+@media (min-width: 900px) and (max-width: 1200px) {
+    .section-right {
+        margin-left: 10px;
+        width: 100%;
+    }
+
+    .sidebar {
+        width: 50%;
+    }
+}
+
+@media (min-width: 600px) and (max-width: 899px) {
+    .section-right {
+        margin-left: 10px;
+        width: 100%;
+    }
+
+    .sidebar {
+        width: 50%;
+    }
+
+    .card-body {
+        flex-direction: column;
+        align-items: center;
+        justify-content: center;
+    }
+}
+
+/** Mobile Layout**/
+@media (max-width: 599px) {
+    .section-container {
+        flex-direction: column;
+    }
+
+    .sidebar {
+        width: 100%;
+        margin-left: 0;
+    }
+
+    .section-right {
+        margin-left: 0;
+        width: 100%;
+    }
+
+    .card-body {
+        flex-direction: column;
+        align-items: center;
+        justify-content: center;
+    }
+
+    .card-title {
+        display: flex;
+        align-items: center;
+        justify-content: center;
+    }
+}
+
+
+</style>
+
+<body>
+    <script src="script.js"></script>
+    <a href="#" class="top">
+        <i class="fa-solid fa-arrow-up"></i>
+    </a>
+    <nav>
+        <img src="images/logo.png">
+        <p class="satisfy-regular">Sammy's MindChirps </p>
+    </nav>
+    <div class="section-container">
+        <main class="section-right">
+            <div class="card-container">
+                <div class="card-title">Review of the movie Lover directed by Prabhuram Vyas</div>
+                <div class="card-body">
+                    <img src="images/img1.jpeg">
+                    <div class="ancher" style="margin-left: 5px;">
+                        <p >Love is an emotion that has always intrigued me. It is loaded with lot of
+                            contrarian feelings- you need the person you love to be possessive about
+                            you yet you need your space; you need that person to respect your thoughts
+                            and let you do things on your own course yet you want that person to offer
+                            their unsolicited views, and I could go on and on about how this universal
+                            feeling called "LOVE" is so unfathomable and complex. Perhaps, this is why,
+                            no matter how many movies are made around the central theme of love, new
+                            ones with fresher perspective like "Lover" still are celebrated by the audience.
+                        </p>
+                        <a href="#">..[Continue Reading...]</a>
+                    </div>
+                </div>
+                <div class="card-footer">
+                    <button>Moview Reviews</button>
+                </div>
+            </div>
+            <div class="card-container">
+                <div class="card-title">Review of the Tamil movie Por Thozhil directed by Vignesh Raja</div>
+                <div class="card-body">
+                    <img src="images/por.jpeg">
+                    <div style="margin-left: 5px;">
+                        <p >Vignesh Raja's debut movie Por Thozhil revolves around the story where 2 cops are on a
+                            mission to hunt down a serial killer. This is a stereotypical theme, which Kollywood
+                            audience are used to from the days of Sigappu Rojakkal but the director has navigated
+                            through the plot with rich twists and tight screenplay, maintaining the suspense all through
+                            the movie.
+                        </p>
+                        <a href="#">..[Continue Reading...]</a>
+                    </div>
+                </div>
+                <div class="card-footer">
+                    <button>Moview Reviews</button>
+                </div>
+            </div>
+            <div class="card-container">
+                <div class="card-title">Review of movie Archana 31 Not Out by Akhil Anil Kumar</div>
+                <div class="card-body">
+                    <img src="images/archana.jpeg">
+                    <div style="margin-left: 5px;">
+                        <p>'Woman+ Unmarried+ Approaching one's 30s' is a perfect combination that would invite unabated
+                            sympathies and advise from one's friends(married) and family. Archana 31 Not Out portrays
+                            the life of one such woman, Archana(played by Aishwarya Lekshmi), who struggles to find the
+                            right groom for her. And when she eventually thinks she has found one, a twist awaits her.
+                        </p>
+                        <a href="#">..[Continue Reading...]</a>
+                    </div>
+                </div>
+                <div class="card-footer">
+                    <button>Moview Reviews</button>
+                </div>
+            </div>
+            <div class="card-container">
+                <div class="card-title">Review of the book Sailing through a storm- Making crisis work for you written
+                    by T N Hari and Sanjay Swami</div>
+                <div class="card-body">
+                    <img src="images/sanjay.jpeg">
+                    <div style="margin-left: 5px;">
+                        <p >None likes facing crisis in life but we all know that it is inevitable though it's form and
+                            severity may vary. Some crisis could impact self while some like Covid 19 could impact
+                            people at large. Darwin's theory of evolution talks about survival of the fittest, which
+                            emphasizes on the adaptablity to the adverse situations as a quintessential quality to live
+                            to see another day. This theory is very much and all the more relevant in present scenario
+                            given the VUCA (volatile, uncertain, complex and ambiguous) nature of the world. But what
+                            are the essential qualities, you may wonder. Thanks to the authors T N Hari and Sanjay
+                            Swami, who are eminent personalities in the entrepreneurial ecosystem in India, for they
+                            have shared their collective wisdom in the form of their book 'Sailing through a
+                            storm-Making crisis work for you', which helps us understand these qualities through the
+                            inspiring lives of men and women who had confronted major crisis, with equanimity and
+                            fortitude. All are real-life stories, including their personal experiences and that of
+                            illustrious people, most of whom are least heard of and had stayed away from the proverbial
+                            limelight.
+                        </p>
+                        <a href="#">..[Continue Reading...]</a>
+                    </div>
+                </div>
+                <div class="card-footer">
+                    <button>Moview Reviews</button>
+                </div>
+            </div>
+            <div class="card-container">
+                <div class="card-title">Gautam Vasudev Menon and Relationships- An analysis of Vinnaithandi Varuvaya
+                </div>
+                <div class="card-body">
+                    <img src="images/vtv.jpeg">
+                    <div style="margin-left: 5px;">
+                        <p >Take any relationship- be it between a parent and one's kids, that with one's friends, or
+                            colleagues etc., Any contact between two humans has got lot of intricacies and nuances. But
+                            nothing can beat the complexity more than a relationship that blossoms between a man and a
+                            woman who intends to share their life with each other. Given its complexity, capturing it in
+                            truest sense and realistically is quite a challenge for anyone as there is nothing black or
+                            white about 'Love', it's always in the grey!! The challenge lies in bringing out the inner
+                            emotions including the ambiguities and uncertainties in the minds of the characters who are
+                            portrayed to be in love. When it comes to authors, I always felt Somerset Maugham stands out
+                            in beautifully showcasing the vulnerabilities of the lovers. He goes to such depths so as to
+                            capture even the minutest of emotions in detail. For instance, his stories would narrate how
+                            stealthily they yearn to meet each other and verbalises the hard emotions that even the
+                            person undergoing them can't express in words.
+                        </p>
+                        <a href="#">..[Continue Reading...]</a>
+                    </div>
+                </div>
+                <div class="card-footer">
+                    <button>Moview Reviews</button>
+                </div>
+            </div>
+            <div class="card-container">
+                <div class="card-title">Review of the Tamil movie Nitham Oru Vanam by Ra Karthik</div>
+                <div class="card-body">
+                    <img src="images/nitham.jpeg">
+                    <div style="margin-left: 5px;">
+                        <p >The movie's storyline is very straight forward: How travel can change one's outlook about
+                            life. Of late, in Kollywood cinema, this pattern can be seen where there is a depressed
+                            person(men, mostly) who would climb on their Royal Enfield bike and then set off to the
+                            Himalayan mountains; when they return, they become a refined soul. So, is this movie any
+                            different from the stereotypical portrayal?! Ah, you can't get to the verdict right in the
+                            first paragraph :D
+                        </p>
+                        <a href="#">..[Continue Reading...]</a>
+                    </div>
+                </div>
+                <div class="card-footer">
+                    <button>Moview Reviews</button>
+                </div>
+            </div>
+            <div class="card-container">
+                <div class="card-title">Book Review of Row, Row, Row your Boat - 50 Simple Little Things to Navigate the
+                    Modern Indian Marriage by Sophia Philips and Roopak Nedumpilly</div>
+                <div class="card-body">
+                    <img src="images/row.jpeg">
+                    <div style="margin-left: 5px;">
+                        <p >It's a common saying which goes like 'Marriages are made in Heaven'; but we all know that the
+                            couple should still lead their lives on (beautiful yet complicated) Earth!! All of us want
+                            and yearn for a happy, peaceful, fun filled and satisfying married life and a partner who
+                            would support, defend, and handhold us in this journey. But very rarely do we come across
+                            couples who have achieved this stature. This book 'Row, Row, Row your Boat' is a book
+                            written by couple therapists, Sophia and Roopak(a couple themselves!!), who turned around
+                            their married life which was on the verge of collapse with therapy's help. This is a short
+                            but insightful read on little things that couples could do 'together' to reach their vision
+                            of becoming a made-for-each-other couple, which apparently was their original vow when they
+                            got married but may have fizzled out as years passed by.
+                        </p>
+                        <a href="#">..[Continue Reading...]</a>
+                    </div>
+                </div>
+                <div class="card-footer">
+                    <button>Moview Reviews</button>
+                </div>
+            </div>
+            <div class="card-container">
+                <div class="card-title">Book Review of The Moral Compass: Finding Balance and Purpose in an Imperfect
+                    World by Hardayal Singh</div>
+                <div class="card-body">
+                    <img src="images/moral.jpeg">
+                    <div style="margin-left: 5px;">
+                        <p>Let's assume this situation. You are working in a reputed organization and your appraisal is
+                            underway. You have high hopes of getting a sizeable increment with a promotion to a
+                            leadership role. All of a sudden, your manager invites you into his room and asks you to
+                            poach some information to a competitor firm for some illegal commission. Would you be okay
+                            doing this so that your appraisal sails through, which will also keep you in your manager's
+                            good books or would you back off as you would be hurting the organization for illegal short
+                            term again. This is just an example of one of plethora of daily dilemmas that life throws at
+                            you with varying complexities. This book by Hardayal Singh, a civil service Officer,
+                            attempts to highlight through fictional and real stories of common men, that choosing and
+                            walking along the righteous path with an unwavering mind is possible but acknowledges that
+                            it is extremely difficult. Through these stories, the readers will get to understand that
+                            though the path has no or little trail, when one looks back one will feel satisfied for
+                            having left a trail, serving as a guiding light for fellow men. More importantly, enjoy a
+                            good night's sleep!
+                        </p>
+                        <a href="#">..[Continue Reading...]</a>
+                    </div>
+                </div>
+                <div class="card-footer">
+                    <button>Moview Reviews</button>
+                </div>
+            </div>
+        </main>
+         
+        
+        <div class="sidebar">
+            <div class="card-container">
+                <div class="card-title" style="font-family: system-ui, -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Oxygen, Ubuntu, Cantarell, 'Open Sans', 'Helvetica Neue', sans-serif; font-weight: 400;">Newsletter</div>
+                <div class="card-body"
+                    style="display: flex; flex-direction: column; justify-content: center; align-items: center; padding: 5px">
+                    <input type="text" placeholder="Email Address" padding="10px">
+                    <button>Subscribe</button>
+                </div>
+            </div>
+            <div class="card-container">
+                <div class="card-title" style="font-family: system-ui, -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Oxygen, Ubuntu, Cantarell, 'Open Sans', 'Helvetica Neue', sans-serif; font-weight: 400;">About Sammy's Mindchirps</div>
+                <div class="card-body"
+                    style="display: flex; flex-direction: column; justify-content: center; align-items: center; padding: 5px">
+                    <p >Hello! Welcome to Sammy's MindChirps. I'm glad you are here. To me, the word LIFE is an acronym
+                        of Laboratory with Infinite Freedom to Experiment. It's more like a kaleidoscope offering
+                        amazing learning opportunities as we grow and explore various facets of life. So this blog is a
+                        platform where I share anything that I find interesting (with my two cents, of course :D). I
+                        assure that you will have some new learning when you exit the blog. And do share your feedback on
+                        the blog or anything you want me to write about in this blog by dropping an email to
+                        mindchirps@gmail.com</p>
+                </div>
+            </div>
+            <div class="card-container">
+                <div class="card-title" style="font-family: system-ui, -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Oxygen, Ubuntu, Cantarell, 'Open Sans', 'Helvetica Neue', sans-serif; font-weight: 400;">Categories</div>
+                <div class="card-body1">
+                    <p><i class="fa-solid fa-square-caret-right"></i><a href="#">Book Review </a><button>16</button></p>
+                    <ul style="list-style-type: none;">
+                        <li><i class="fa-solid fa-check"></i><a href="#">Self help</a><button>3</button></li>
+    <li><i class="fa-solid fa-check"></i><a href="#"> Physcology</a><button>3</button></li>
+    <li><i class="fa-solid fa-check"></i><a href="#">Drama</a><button>1</button></li>
+    <li><i class="fa-solid fa-check"></i><a href="#">Science</a><button>0</button></li>
+    <li><i class="fa-solid fa-check"></i><a href="#">Non fiction</a><button>8</button></li>
+    <li><i class="fa-solid fa-check"></i><a href="#">Technology</a><button>1</button></li>   
+</ul>
+<p><i class="fa-solid fa-square-caret-right"></i><a href="#">Movie Review </a><button>18</button></p>
+<p><i class="fa-solid fa-square-caret-right"></i><a href="#">My Experiences </a><button>1</button></p>
+<p><i class="fa-solid fa-square-caret-right"></i><a href="#">Interesting facts </a><button>1</button></p>
+<p><i class="fa-solid fa-square-caret-right"></i><a href="#">TV series Reviews</a><button>1</button></p>
+<p><i class="fa-solid fa-square-caret-right"></i><a href="#">Book Excerpts</a><button>1</button></p>
+
+                    
+                </div>
+            </div>
+            <div class="card-container">
+                <div class="card-title"style="font-family: system-ui, -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Oxygen, Ubuntu, Cantarell, 'Open Sans', 'Helvetica Neue', sans-serif; font-weight: 400;">Tags</div>
+                <div class="card-body"
+                    style="display: flex; flex-direction: column; justify-content: left; align-items: left; padding: 5px">
+                    <div class="list" style="display: flex; flex-direction: row;">
+                        <ul>
+                            <li><a href="#">Technology</a></li>
+                            <li><a href="#">Legal</a></li>
+                            <li><a href="#">Animals</a></li>
+                            <li><a href="#">Web Designing</a></li>
+                            <li><a href="#">Thriller</a></li>
+                            <li><a href="#">Self-Help-Book</a></li>
+                        </ul>
+                        <ul style="color: rgb(3, 72, 109);" s>
+                            <li><a href="#">Science</a></li>
+                            <li><a href="#">Drama</a></li>
+                            <ul style="list-style-type: circle;">
+                                <li><a href="#">Yoga</a></li>
+                                <li><a href="#">Non-fiction</a></li>
+                            </ul>
+                        </ul>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <center>
+    <div class="pagination">
+        <a href="#"><</a>
+        <a href="#">1</a>
+        <a href="#" class="active">2</a>
+        <a href="#">3</a>
+        <a href="#">4</a>
+        <a href="#">5</a>
+        <a href="#">6</a>
+        <a href="#">></a>
+      </div>
+    </center>
+    
+    <footer>
+        <div class="footer-end">
+            <i class="fa-brands fa-twitter"></i>
+            <i class="fa-brands fa-facebook"></i>
+            <i class="fa-brands fa-instagram"></i>
+            <i class="fa-brands fa-google"></i>
+        </div>
+        <p style="text-align: center; font-size: 20px; color: white; font-weight: bold;">@ All rights reserved by
+            Sammy's MindChirps</p>
+        <p style="text-align: center; font-size: 16px; color: white;">Logo credits: Ms.G.D.Janani</p>
+        <p style="text-align: center; font-size: 16px; color: white;">Developed and Hosted by 8Queens</p>
+    </footer>
+</body>
+
+</html>
